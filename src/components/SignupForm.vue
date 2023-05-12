@@ -1,14 +1,19 @@
 <template>
   <form>
     <label>
-        Hello
-        <input type="text" required>
+        Email:
     </label>
+    <input type="email" required v-model="email">
   </form>
 </template>
 
 <script>
 export default {
+    data() {
+        return {
+            email: ''
+        }
+    }
 
 }
 </script>
