@@ -8,6 +8,11 @@
         Password:
     </label>
     <input type="password" required v-model="password">
+    <label>Role:</label>
+    <select>
+        <option value="developer">Web Developer</option>
+        <option value="designer">Web Designer</option>
+    </select>
   </form>
   <p>Email: {{ email }}</p>
   <p>Password: {{ password }}</p>
