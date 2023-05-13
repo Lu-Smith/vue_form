@@ -8,7 +8,7 @@
         Password:
     </label>
     <input type="password" required v-model="password">
-    <div v-if="passwordError">{{ passwordError }}</div>
+    <div v-if="passwordError" class="error">{{ passwordError }}</div>
     <label>Role:</label>
     <select v-model="role">
         <option value="developer">Web Developer</option>
@@ -139,5 +139,13 @@ button {
 
 .submit {
     text-align: center;
+}
+
+.error {
+color: red;
+margin-top: 10px;
+font-size: 0.8em;
+font-weight: bold;
+
 }
 </style>
