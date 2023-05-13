@@ -22,6 +22,9 @@
         <input type="checkbox" required v-model="terms">
         <label>Accept terms and conditions</label>
     </div>
+    <div class="submit">
+        <button>Create an Account</button>
+    </div>
   </form>
   <p>Email: {{ email }}</p>
   <p>Password: {{ password }}</p>
@@ -116,5 +119,19 @@ input[type="checkbox"] {
 .pill:hover {
     background: #dad6d6;
     color: #504e4e;
+}
+
+button {
+    background: rgb(56, 56, 129);
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: white;
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+
+.submit {
+    text-align: center;
 }
 </style>
