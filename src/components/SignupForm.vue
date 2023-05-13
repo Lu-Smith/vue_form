@@ -43,7 +43,7 @@ export default {
     },
     methods: {
         addSkill(e) {
-            if (e.key === ',' && (this.tempSkill.length > 2)) {
+            if (e.key === 'Enter' && (this.tempSkill.length > 2)) {
                 if (!this.skills.includes(this.tempSkill)) {
                     this.skills.push(this.tempSkill)
                 }
