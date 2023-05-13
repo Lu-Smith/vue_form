@@ -25,7 +25,7 @@ export default {
         return {
             email: '',
             password: '',
-            role: ''
+            role: 'designer'
         }
     }
 
@@ -52,7 +52,7 @@ label {
     font-weight: bold;
 }
 
-input {
+input, select {
     display: block;
     padding: 10px 6px;
     width: 100%;
